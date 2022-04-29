@@ -10,10 +10,11 @@
         body{
             color: rgb(48, 48, 48);
         }
-        a {
+        a, span {
             text-transform:uppercase;
             text-decoration: none;
             color: rgb(116, 85, 8);
+            font-weight: bold;
         }
         h1 {
             color: rgb(12, 90, 90);
@@ -30,85 +31,144 @@
         h4 {
             font-size: 24px;
         }
-        h5 {
+        h5, span {
             font-size: 20px;
             margin-bottom: 20px;
             color: rgb(59, 73, 97);
         }
         table, th, td {
             color: rgb(233, 218, 228);
-            margin: 30px 0 0 40px;
+            margin: 30px 0 40px 40px;
             border: 3px solid rgb(255, 255, 255);
             border-collapse: collapse;
             padding: 10px 20px 10px 20px;
         }
         th, td {
             border-radius: 25px;
-            background-color: rgb(141, 91, 126);
+            background-color: rgb(175, 135, 163);
         }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 200px;   
+            border-radius: 13px;
+            padding: 10px;
+            margin-left: 30px;
+            background-color: rgb(196, 156, 156);
+        }
+
+        label {
+            margin:10px;
+            color: rgb(129, 56, 78);
+        }
+
+        input {
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            height: 20px;
+            color: rgb(158, 80, 104);
+        }
+
+        .marcador {
+            display: flex;
+            align-items: center;
+        }
+
+        .marcador input {
+            border: 1px solid #6d2525;
+        }
+
     </style>
 </head>
 <body>
-    <div>
-        <h1><b>Olá Mundãooooo! Aqui vou falar um pouco sobre mim!</b></h1>
-    </div>
-    <h2>Meu nome é <span>Luiza Barbalho.</span></h2>
-    <h3>Os meus maiores amores na vida são:</h3>
-    <ul>
-        <li><strong>Minha família</strong></li>
-        <li><strong>Meus Amigos</strong></li>
-        <li><strong>Meus lindos pets</strong></li>
-        <li>Café</li>
-        <li>Videogames e BoardGames</li>
-        <li>Livros de fantasia e <i>thriller</i> policial</li>
-        <li>Viajar</li>
-    </ul>
-    <h3>Horarios Alpha</h3>
-    <table>
 
-            <tr>
-                <th style="background-color: white;">&nbsp;</th>
-                <th>seg-25</th>
-                <th>ter-26</th>
-                <th>qua-27</th>
-                <th>qui-28</th>
-                <th>sex-29</th>
-            </tr>
+    <header>
+
+        <h1>Olá Mundãooooo! Aqui vou falar um pouco sobre mim!</h1>
+
+        <h2>Meu nome é <span>Luiza Barbalho.</span></h2>
+    </header>
+
+    <section>
+        <h3>Os meus maiores amores na vida são:</h3>
+        <ul>
+            <li><strong>Minha família</strong></li>
+            <li><strong>Meus Amigos</strong></li>
+            <li><strong>Meus lindos pets</strong></li>
+            <li>Café</li>
+            <li>Videogames e BoardGames</li>
+            <li>Livros de fantasia e <i>thriller</i> policial</li>
+            <li>Viajar</li>
+        </ul>
+    </section>
+    
+    <section>
+
+        <h3>Horarios Alpha</h3>
+        <table>
+
+                <tr>
+                    <th style="background-color: white;">&nbsp;</th>
+                    <th>seg-25</th>
+                    <th>ter-26</th>
+                    <th>qua-27</th>
+                    <th>qui-28</th>
+                    <th>sex-29</th>
+                </tr>
 
 
-            <tr>
-                <td>14:30</td>
-                <td>Hard Skills</td>
-                <td>Hard Skills</td>
-                <td>Hard Skills</td>
-                <td>Hard Skills</td>
-                <td>Hard Skills</td>
-            </tr>
+                <tr>
+                    <td>14:30</td>
+                    <td>Hard Skills</td>
+                    <td>Hard Skills</td>
+                    <td>Hard Skills</td>
+                    <td>Hard Skills</td>
+                    <td>Hard Skills</td>
+                </tr>
 
 
-            <tr>
-                <td>15:00</td>
-                <td>&nbsp;</td>
-                <td>M. Empresa</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
+                <tr>
+                    <td>15:00</td>
+                    <td>&nbsp;</td>
+                    <td>M. Empresa</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
 
-            <tr>
-                <td>17:00</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>M. Empresa</td>
-                <td>&nbsp;</td>
-            </tr>
+                <tr>
+                    <td>17:00</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>M. Empresa</td>
+                    <td>&nbsp;</td>
+                </tr>
+        </table>
+    </section>
 
-    </table>
+    <section>
+        <h3>Horarios Alpha</h3>
 
-    <div>
-        <h3>Curiosidade aleatória: Um lugar onde eu moraria</h3>
-        <a href="https://pt.wikipedia.org/wiki/Praga" target="_blank"><h4><b>Praga</b></h4></a>
+        <form id="dd" method="get" action="guardar-info-ex">
+            <label for="pergunta">Nome</label>
+            <input type="text" name="nome" id="pergunta" placeholder="Digite seu nome aqui.">
+            <label for="email">E-mail</label>
+            <input type="e-mail" name="email" id="email" placeholder="Digite seu e-mail aqui.">
+            <input type="submit" name="enviar" value="Enviar">
+            <div class="marcador">
+                <label for="marcador">Enviado</label>
+                <input id="marcador" type="radio">
+            </div>
+        </form>
+    </section>
+
+
+    <section>
+        <h3>Curiosidade aleatória - um lugar onde eu moraria: <span><a href="https://pt.wikipedia.org/wiki/Praga" target="_blank">Praga</a></span></h3>
+        
         <!--Abaixo colocar fatos aleatórios sobre lugares na OldTown de Praga-->
         <div>
             <h5><i>Staroměstské náměstí</i></h5>
@@ -119,7 +179,7 @@
         </div>
         <div>
             <h5><i>Pražský orloj</i></h5>
-            <a href="https://pt.wikipedia.org/wiki/Praga" target="_blank"><img width="300px" height="200px" src="./img/praga-relogio.jpeg" alt="Praça principal de Praga"></a>
+            <a href="./outra-pagina.html"><img width="300px" height="200px" src="./img/praga-relogio.jpeg" alt="Praça principal de Praga"></a>
             
             <p>Prague Orloj <i>Pražský orloj</i> é um relógio astronômico medieval ligado à Antiga Prefeitura de Praga, capital da República Tcheca. Ele foi instalado pela primeira vez em 1410, tornando-se o terceiro relógio astronômico mais antigo do mundo e o mais antigo ainda em operação.</p>
             <p>O Orloj sofreu grandes danos em maio de 1945, durante a revolta de Praga na segunda guerra mundial, quando os nazistas dispararam no lado sudoeste da Praça da Cidade Velha de vários veículos blindados em uma tentativa frustrada de destruir um dos centros da revolta.<br/>
@@ -140,7 +200,7 @@
             <p>A vida noturna de Praga tem uma reputação que agora se espalha muito além do continente. Os visitantes vêm aqui em busca daqueles míticos bares onde a cerveja é mais barata que a água, onde o desejo tcheco de pivo não tem fim. Claro, você pode encontrar essas coisas, mas uma noite em Praga é muito mais do que o estereótipo, sendo os melhores lugares para sair em Praga são quase sempre fora do centro, com exceção de algumas jóias fáceis de encontrar para os turistas.</p>
         </div>
         
-    </div>
+    </section>
 
 </body>
 </html>
