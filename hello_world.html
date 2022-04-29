@@ -51,18 +51,17 @@
 
 
 /*====================================STYLE DO FORMULÁRIO====================================*/
-        form {
+
+
+        fieldset {
             display: flex;
             flex-direction: column;
             width: 420px;   
             border-radius: 13px;
+            border: none;
             padding: 15px;
             margin-left: 30px;
             background-color: rgb(196, 156, 156);
-        }
-
-        fieldset {
-            border: none;
         }
 
         label, p {
@@ -207,18 +206,17 @@
                 <div class="retinho">
                     <label for="data">Data:</label>
                     <input type="date" id="data" name="data"
-                        value=""
-                        min="2022-01-01" max="2022-12-31">
+                        value="" min="2022-01-01" max="2022-12-31" tabindex="1">
                 </div>
 
                 <div class="retinho">
                     <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui.">
+                    <input type="text" name="nome" id="nome" placeholder="  Digite seu nome aqui." tabindex="2">
                 </div>
                 
                 <div class="retinho">
                     <label for="email">E-mail:</label>
-                    <input type="e-mail" name="email" id="email" placeholder="  Digite seu e-mail aqui.">
+                    <input type="e-mail" name="email" id="email" placeholder="  Digite seu e-mail aqui."tabindex="3">
                 </div>
                 
                 <p>Escolha seu velhinho preferido</p>
@@ -240,6 +238,22 @@
                         <input type="radio" id="velho4" name="velhinhos" value="Gandalf">
                         <label for="velho4">Gandalf</label>
                     </div>
+                </div>
+
+                <div class="retinho">
+                        <label>Qual o melhor livro de Harry Potter?</label>
+                        <select name="color">
+                            <optgroup >
+                                <option value="#ff0000">Primeiro</option>
+                                <option value="#00ff00">Segundo</option>
+                                <option value="#0000ff">Claro que o Terceiro</option>
+                            </optgroup>
+                            <optgroup><option value="#770077">Quarto</option>
+                                <option value="#770000">Quinto</option>
+                                <option value="#000077">Sexto</option>
+                                <option value="#d1ae00">Sétimo</option>
+                            </optgroup>
+                        </select>
                 </div>
 
                 <div class="retinho">
