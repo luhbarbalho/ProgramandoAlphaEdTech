@@ -9,6 +9,7 @@
     <style>
         body{
             color: rgb(48, 48, 48);
+            box-sizing: border-box;
         }
         a, span {
             text-transform:uppercase;
@@ -48,17 +49,23 @@
             background-color: rgb(175, 135, 163);
         }
 
+
+/*====================================STYLE DO FORMULÁRIO====================================*/
         form {
             display: flex;
             flex-direction: column;
-            width: 200px;   
+            width: 420px;   
             border-radius: 13px;
-            padding: 10px;
+            padding: 15px;
             margin-left: 30px;
             background-color: rgb(196, 156, 156);
         }
 
-        label {
+        fieldset {
+            border: none;
+        }
+
+        label, p {
             margin:10px;
             color: rgb(129, 56, 78);
         }
@@ -69,16 +76,58 @@
             border-radius: 4px;
             height: 20px;
             color: rgb(158, 80, 104);
+            width: 270px;
+        }
+
+        .doVelhinho {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            width: 100px;
+            padding: 0;
+            font-size: 12.5px;
+        }
+        .doVelhinho input {
+            width: 10px;
+        }
+        
+        .retinho {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #idade {
+            -webkit-appearance: none;  /* Override default CSS styles */
+            height: 7px;
+            background: #d3d3d3;
+            opacity: 0.7;
+            cursor: pointer;
         }
 
         .marcador {
             display: flex;
             align-items: center;
+            justify-content: center;
         }
 
         .marcador input {
-            border: 1px solid #6d2525;
+            width: 13px;
         }
+
+        .btn {
+            display: flex;
+            width: auto;
+            justify-content: center;
+        }
+        
+        .btn input {
+            width: 90px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+/*===========================================================================================*/
 
     </style>
 </head>
@@ -152,16 +201,68 @@
     <section>
         <h3>Forminhozinho Nonsense</h3>
 
-        <form id="dd" method="get" action="guardar-info-ex">
-            <label for="pergunta">Nome</label>
-            <input type="text" name="nome" id="pergunta" placeholder="Digite seu nome aqui.">
-            <label for="email">E-mail</label>
-            <input type="e-mail" name="email" id="email" placeholder="Digite seu e-mail aqui.">
-            <input type="submit" name="enviar" value="Enviar">
-            <div class="marcador">
-                <label for="marcador">Enviado</label>
-                <input id="marcador" type="radio">
-            </div>
+        <form id="dd" method="post" action="guardar-info-ex">
+            <fieldset>
+
+                <div class="retinho">
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data"
+                        value=""
+                        min="2022-01-01" max="2022-12-31">
+                </div>
+
+                <div class="retinho">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui.">
+                </div>
+                
+                <div class="retinho">
+                    <label for="email">E-mail:</label>
+                    <input type="e-mail" name="email" id="email" placeholder="  Digite seu e-mail aqui.">
+                </div>
+                
+                <p>Escolha seu velhinho preferido</p>
+                
+                <div class="retinho">
+                    <div class="doVelhinho">
+                        <input type="radio" id="velho1" name="velhinhos" value="Carl">
+                        <label for="velho1">Carl</label>
+                    </div>
+                    <div class="doVelhinho">
+                        <input type="radio" id="velho2" name="velhinhos" value="Dumbledore">
+                        <label for="velho2">Dumbledore</label>
+                    </div>
+                    <div class="doVelhinho">
+                        <input type="radio" id="velho3" name="velhinhos" value="Papai Noel">
+                        <label for="velho3">Papai Noel</label>
+                    </div>
+                    <div class="doVelhinho">
+                        <input type="radio" id="velho4" name="velhinhos" value="Gandalf">
+                        <label for="velho4">Gandalf</label>
+                    </div>
+                </div>
+
+                <div class="retinho">
+                    <label for="idade">Minha idade:</label>
+                    <input type="range" id="idade" name="idade" min="1" max="99" value="33" step="5">
+                </div>
+
+
+                <div class="retinho">
+                    <label for="pwd">Eu amo muito:</label>
+                    <input type="password" id="pwd" name="pwd" placeholder="  Conte um segredo segredoso.">
+                </div>
+                
+                <div class="btn">
+                    <input type="reset" name="resetar" value="Resetar">
+                    <input type="submit" name="enviar" value="Enviar">
+                </div>
+                
+                <div class="marcador">
+                    <label for="marcador">enviado</label>
+                    <input id="marcador" type="checkbox">
+                </div>
+            </fieldset>
         </form>
     </section>
 
