@@ -23,7 +23,7 @@
 
     <style>
         body{
-            color: rgb(48, 48, 48);
+            color: rgb(26, 26, 26);
             box-sizing: border-box;
         }
         a, span {
@@ -62,6 +62,27 @@
         th, td {
             border-radius: 25px;
             background-color: rgb(175, 135, 163);
+        }
+
+        .medias {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+
+        .medias .media-aud, .media-vd {
+            margin: 20px;
+        }
+
+        .media-vd p {
+            margin: 20px 0;
+            color: rgb(26, 26, 26);
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .media-vd video {
+            border-radius: 20px;
         }
 
 
@@ -141,7 +162,10 @@
             cursor: pointer;
             margin-top: 15px;
         }
+
+
 /*===========================================================================================*/
+
 
     </style>
 </head>
@@ -165,6 +189,22 @@
             <li>Livros de fantasia e <i>thriller</i> policial</li>
             <li>Viajar</li>
         </ul>
+    </section>
+
+    <section class="medias">
+        <div class="media-aud">
+            <audio controls>
+                <source src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/kygo-stole-the-show.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        
+        <div class="media-vd">
+            <p>Marmotinhas marotas:</p>
+            <video width="614" height="auto" controls autoplay loop muted>
+                <source src="./img/marmots.mp4" type="video/mp4">
+                <source src="./img/marmots.ogg">
+            </video>
+        </div>
     </section>
     
     <section>
