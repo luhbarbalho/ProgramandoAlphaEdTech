@@ -208,6 +208,11 @@
             border-radius: 30%;
         }
 
+        canvas {
+            border:1px solid #000000;
+            margin: 40px 0 40px 10px;
+        }
+
 
 /*===========================================================================================*/
 
@@ -243,6 +248,10 @@
 
         <img src="./img/ratinhoFofo.svg" alt="ratinho fofo">
     </section>
+
+
+        <canvas id="myCanvas" width="400" height="200"></canvas>
+
     
 
     <section class="medias">
@@ -453,6 +462,45 @@
         
     </section>
 
+
+    <script>
+
+        var g = document.getElementById("myCanvas");
+        var gtx = g.getContext("2d");
+
+        // Create gradient
+        var grd = gtx.createLinearGradient(0, 0, 300, 0);
+        grd.addColorStop(0, "rgb(158, 80, 104)");
+        grd.addColorStop(1, "rgb(196, 156, 156, 0.3)");
+
+        // Fill with gradient
+        gtx.fillStyle = grd;
+        gtx.fillRect(0, 0, 400, 200);
+
+        
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0, 0);
+        ctx.lineTo(400, 200);
+        ctx.stroke();
+
+        var d = document.getElementById("myCanvas");
+        var dtx = d.getContext("2d");
+        dtx.beginPath();
+        dtx.arc(300, 60, 50, 0, 2 * Math.PI);
+        dtx.stroke();
+
+        var e = document.getElementById("myCanvas");
+        var etx = e.getContext("2d");
+        etx.beginPath();
+        etx.arc(100, 140, 50, 0, 2 * Math.PI);
+        etx.stroke();
+
+        
+
+
+
+    </script>
 
 
 </body>
