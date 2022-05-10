@@ -1,0 +1,184 @@
+body{
+    color: rgb(26, 26, 26);
+    box-sizing: border-box;
+}
+a, span {
+    text-transform:uppercase;
+    text-decoration: none;
+    color: rgb(116, 85, 8);
+    font-weight: bold;
+}
+h1 {
+    color: rgb(12, 90, 90);
+}
+h3 {
+    margin-top: 40px;
+}
+span {
+    color: rgb(99, 128, 99);
+}
+li {
+    list-style: none;
+}
+h4 {
+    font-size: 24px;
+}
+h5, span {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgb(59, 73, 97);
+}
+table, th, td {
+    color: rgb(233, 218, 228);
+    margin: 30px 0 40px 40px;
+    border: 3px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    padding: 10px 20px 10px 20px;
+}
+th, td {
+    border-radius: 25px;
+    background-color: rgb(175, 135, 163);
+}
+
+/*==================================== MEDIA ====================================*/
+
+.medias {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.medias .media-aud, .media-vd {
+    margin: 20px;
+}
+
+.media-vd p {
+    margin: 20px 0;
+    color: rgb(26, 26, 26);
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.media-vd video {
+    border-radius: 20px;
+}
+
+/*==================================== IFRAME ====================================*/
+
+.iframes {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#outra-pagina {
+    border: 1px solid rgb(146, 146, 146);
+}
+
+iframe {
+    margin-top: 25px;
+    border: none;
+    height: 315px;
+}
+
+.mapouter {
+    position:relative;
+    text-align:right;
+    width:100%;
+    height:350px;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    width:100%;
+    height:350px;
+}
+
+.gmap_iframe {
+    height:350px!important;
+}
+
+
+/*==================================== FORMULÁRIO ====================================*/
+
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 420px;   
+    border-radius: 13px;
+    border: none;
+    padding: 15px;
+    margin-left: 30px;
+    background-color: rgb(196, 156, 156);
+}
+
+label, p {
+    margin:10px;
+    color: rgb(129, 56, 78);
+}
+
+input {
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    height: 20px;
+    color: rgb(158, 80, 104);
+    width: 270px;
+}
+
+.doVelhinho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100px;
+    padding: 0;
+    font-size: 12.5px;
+}
+.doVelhinho input {
+    width: 10px;
+}
+
+.retinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#idade {
+    -webkit-appearance: none;
+    height: 7px;
+    background: #d3d3d3;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.marcador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marcador input {
+    width: 13px;
+}
+
+.btn {
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
+
+.btn input {
+    width: 90px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.imgSVG {
+    margin: 10px;
+    background-color: rgb(175, 135, 163);
+    border: 2px solid rgb(122, 73, 109);
+    border-radius: 30%;
+}
