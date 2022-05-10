@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 body{
     color: rgb(26, 26, 26);
     box-sizing: border-box;
 }
+
 a, span {
     text-transform:uppercase;
     text-decoration: none;
@@ -28,6 +30,15 @@ h5, span {
     margin-bottom: 20px;
     color: rgb(59, 73, 97);
 }
+
+.lista > h3 {
+    font-size: 16px;
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+}
+
+/*==================================== TABELA ====================================*/
+
 table, th, td {
     color: rgb(233, 218, 228);
     margin: 30px 0 40px 40px;
@@ -120,7 +131,7 @@ label, p {
 }
 
 input {
-    margin: 5px;
+    padding-left: 7px;
     border: none;
     border-radius: 4px;
     height: 20px;
@@ -145,6 +156,10 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.retinho > input::placeholder {
+    color:rgb(158, 80, 104);
 }
 
 #idade {
@@ -173,7 +188,6 @@ input {
 
 .btn input {
     width: 90px;
-    cursor: pointer;
     margin-top: 15px;
 }
 .imgSVG {
@@ -181,4 +195,8 @@ input {
     background-color: rgb(175, 135, 163);
     border: 2px solid rgb(122, 73, 109);
     border-radius: 30%;
+}
+
+.btn input, .marcador input:hover {
+    cursor: pointer;
 }
