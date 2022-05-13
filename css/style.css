@@ -299,3 +299,124 @@ input {
 .double{
     border: 10px double rgb(177, 175, 42);
 }
+
+
+/***************************CSS - Parte5***************************/
+
+.bodyParte5 {
+    background-color: #d8e5fa;
+    margin: 0;
+    padding: 0;
+}
+
+.strip-top {
+    height: 45px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c7ca7;
+    text-decoration: none;
+    position: fixed;
+    color: #d8e5fa;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.mainParte5 {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    padding-top: 80px;
+}
+
+.conteudo {
+    width: auto;
+    height: 393px;
+    background-color: #155a80;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mainParte5 .conteudo {
+    background-image: url('../img/vivendoavida.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    width: 390px;
+}
+
+.mainParte5 .titulo h1 {
+    margin: 20px;
+    padding: 0;
+    font-size: 27px;
+}
+
+.mainParte5 .titulo .none{
+    color: #76a8b3;
+    text-decoration: none;
+}
+
+.mainParte5 .titulo .over{
+    color: #76b391;
+    text-decoration: overline;
+    text-decoration-thickness: 8px;
+}
+
+.mainParte5 .titulo .through{
+    color: #b490df;
+    text-decoration: line-through;
+    text-decoration-style: dotted;
+}
+.mainParte5 .titulo .throughdashed{
+    color: #dfca90;
+    text-decoration: overline;
+    text-decoration-style: dashed;
+}
+
+.mainParte5 .titulo .underline{
+    color: #503991;
+    text-decoration: underline;
+}
+
+.mainParte5 .titulo .underlinewavy{
+    color: #b4e7ff;
+    text-decoration: underline;
+    text-decoration-style:wavy;
+    text-decoration-thickness: 3px;
+}
+
+.mainParte5 .titulo .underover{
+    color: #91233b;
+    text-decoration: underline overline;
+    text-decoration-thickness: 5px;
+}
+
+.mainParte5 .directionrl {
+    writing-mode: vertical-rl;
+}
+
+.mainParte5 .directionrl .underline, .directionlr .underline{
+    color: #b88f20;
+    text-decoration: overline;
+    text-decoration-style: dashed;
+}
+
+.mainParte5 .directionrl .underover, .directionlr .underover{
+    color: #3a81bb;
+    text-decoration: underline overline;
+    text-decoration-style: dotted;
+}
+
+.mainParte5 .directionrl .throughdashed, .directionlr .throughdashed{ 
+    color: #523b88;
+    text-decoration: line-through;
+    text-decoration-style: dashed;
+}
+
+.mainParte5 .directionlr {
+    writing-mode: vertical-lr;
+}
