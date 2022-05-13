@@ -232,3 +232,70 @@ input {
     width: 400px;
     overflow: hidden;
 }
+
+
+/***************************CSS - Parte4***************************/
+
+.experimentbackground div {
+    width: 600px;
+    height: 150px;
+    color: white;
+}
+
+.solida {
+    background-color: rgb(0, 128, 85);
+}
+
+.solidatransparencia {
+    background-color: rgba(165, 133, 45, 0.473);
+}
+
+.gradiente {
+    background: linear-gradient(to left top, rgb(160, 160, 255), rgb(255, 129, 129));;
+}
+
+.imagemunica {
+    background-image: url('../img/vivendoavida.jpeg');
+    background-repeat: no-repeat;
+    background-size: 200px;
+}
+
+.imagemrepetida {
+    background-image: url('../img/vivendoavida.jpeg');
+    background-repeat: repeat-x;
+    background-size: 100px;
+}
+
+.experimentborder div{
+    width: 600px;
+    height: 150px;
+    color: rgb(66, 66, 66);
+}
+
+.circle {
+    margin-bottom: 70px;
+}
+
+.circle img{
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px #444444;
+    width: 200px;
+    height: 200px;
+}
+
+.solid{
+    border: 3px solid rgb(52, 100, 52);
+}
+
+.dotted{
+    border: 7px dotted rgb(42, 112, 177);
+}
+
+.dashed{
+    border: 1px dashed rgb(177, 42, 136);
+    border-radius: 17px;
+}
+
+.double{
+    border: 10px double rgb(177, 175, 42);
+}
