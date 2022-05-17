@@ -305,8 +305,8 @@ input {
 
 .bodyParte5 {
     background-color: #d8e5fa;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .strip-top {
@@ -322,31 +322,26 @@ input {
     font-family: Roboto;
     font-weight: 700;
     font-size: 30px;
+    margin-bottom: 50px;
 }
 
 .mainParte5 {
     display: flex;
     justify-content: center;
     height: 80vh;
-    padding-top: 80px;
 }
 
-.conteudo {
-    width: auto;
+.mainParte5 .conteudo {
+    width: 390px;
     height: 393px;
     background-color: #155a80;
     display: flex;
     flex-direction: column;
-
-}
-
-.mainParte5 .conteudo {
+    align-items: center;
     background-image: url('../img/vivendoavida.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    width: 390px;
+    margin-top: 90px;
 }
 
 .mainParte5 .titulo h1 {
@@ -420,3 +415,5 @@ input {
 .mainParte5 .directionlr {
     writing-mode: vertical-lr;
 }
+
+
