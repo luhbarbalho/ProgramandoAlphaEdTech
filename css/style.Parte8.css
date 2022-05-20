@@ -1,0 +1,210 @@
+body {
+    background-color: #d8e5fa;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.strip-top{
+    height: 45px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c7ca7;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    color: #d8e5fa;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+section{
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(150, 150, 156);
+    border-radius: 15px;
+    background-color: rgb(255, 245, 246);
+    padding: 15px;
+    color: rgb(112, 0, 37);
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    font-size: 23px;
+    font-weight: 600;
+    background-color: rgb(182, 122, 133);
+    padding: 10px;
+    border-radius: 15px;
+    color: #ffffff;
+}
+
+h3 {
+    width: 98%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    color: rgb(21, 24, 29);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+
+
+
+/**************************** imagem centralizada ****************************/
+
+.center {
+    width: 98%;
+    height: 76%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(40, 63, 40);
+    border-radius: 3px;
+}
+
+.center img {
+    width: 200px;
+    border-radius: 3px;
+}
+
+/**************************** itens alinhados no centro ****************************/
+
+.center-central {
+    width: 200px;
+    height: 200px;
+    padding: 17% 29% 17% 29%;
+    flex-wrap: wrap;
+}
+
+.center-central > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 40px;
+    margin: 5px;
+}
+
+.center-central > div:nth-child(1) {
+    background: #2c7ca7fd;
+}
+.center-central > div:nth-child(2) {
+    background: #ebd087c5
+}
+.center-central > div:nth-child(3) {
+    background: #78a72c86;
+}
+.center-central > div:nth-child(4) {
+    background: #7a2ca742;
+}
+
+
+/**************************** itens alinhados na vertical ****************************/
+
+.center-vertical {
+    flex-direction: column;
+}
+
+.center-vertical > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 40px;
+    margin: 5px;
+}
+
+.between {
+    justify-content: space-between;
+    flex-direction: column-reverse;
+}
+
+.center-vertical > div:nth-child(1) {
+    background: hsl(310,100%,20%);
+}
+.center-vertical > div:nth-child(2) {
+    background: hsl(310,100%,40%);
+}
+.center-vertical > div:nth-child(3) {
+    background: hsl(310,100%,60%);
+}
+.center-vertical > div:nth-child(4) {
+    background: hsl(310,100%,80%);
+}
+
+/**************************** alinhados na horizontal ****************************/
+
+.center-horizontal > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 100px;
+    margin: 5px;
+}
+
+.around {
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+.center-horizontal > div:nth-child(1) {
+    background: hsl(160,80%,40%,1);
+}
+.center-horizontal > div:nth-child(2) {
+    background: hsl(160,80%,40%,0.75);
+}
+.center-horizontal > div:nth-child(3) {
+    background: hsl(160,80%,40%,0.5);
+}
+.center-horizontal > div:nth-child(4) {
+    background: hsl(160,80%,40%,0.25);
+}
+
+
+
+
+
+/* span{
+    content: "";
+    border-right: 100px solid #d92e1e;
+    border-top: 100px solid rgb(153, 248, 255);
+    border-left: 100px solid hotpink;
+    border-bottom: 100px solid yellow;
+    background-color: rgb(115, 128, 0);
+} */
+
+/* .triangle {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to top right, transparent 50%, rgb(255, 162, 162) 0),
+    linear-gradient(to bottom right, rgb(190, 255, 230) 50%, transparent 0);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: left, right;
+    background-color: rgb(239, 255, 208);
+} */
+
+/* .triangle {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to top right, transparent 50%, rgb(255, 162, 162) 0);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(239, 255, 208);
+} */
