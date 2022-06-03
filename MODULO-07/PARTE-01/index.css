@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-p, h1, h5 {
+p, h1, h2, h5 {
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
 }
@@ -24,7 +23,7 @@ nav {
     background-color: rgb(93, 134, 119);
 }
 
-nav p {
+nav h1 {
     color: #F6D5B7;
     text-decoration: none;
     letter-spacing: 2px;
@@ -41,12 +40,12 @@ nav p {
     align-items: center;
     border: none;
     border-radius: 20px;
-    background-image: url(./0606e1fcfac186f939c9d955ede7a7d7.jpeg);
+    background-image: url(../assets/background-sunflower.jpeg);
     background-size: 260px;
     background-repeat: no-repeat;
 }
 
-.card h1 {
+.card h2 {
     font-size: 28px;
     font-weight: 600;
     margin-top: 12px;
@@ -60,15 +59,15 @@ nav p {
     color: rgb(93, 134, 119);
     font-size: 18px;
     font-weight: 600;
-    border: 1px solid #F5E1C6;
+    border: 1px solid #F6D5B7;
     border-radius: 10px;
     background-color: #F6D5B7;
 }
 
 .card h5:hover {
     cursor: pointer;
-    border: 1px solid #f7e2c5;
+    border: 1px solid #F6D5B7;
     border-radius: 10px;
     background-color: transparent;
-    color: #f7e2c5;
+    color: #F6D5B7;
 }

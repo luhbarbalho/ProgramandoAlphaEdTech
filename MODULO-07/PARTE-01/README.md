@@ -1,5 +1,5 @@
 <div display="flex">
-    <img src="../assets/alpha-logo.png" width="40px" align="left"/>
+    <img src="../assets/imgs/alpha-logo.png" width="40px" align="left"/>
     <h1>Módulo 07 - Parte 01</h1>
 </div>
 

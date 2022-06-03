@@ -1,0 +1,71 @@
+/***************************CSS - MODULO 04***************************/
+
+
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body:last-child {
+    margin-bottom: 30px;
+}
+
+p, h1, h2, h3, h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+header {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    background-color: #2c95a7;
+}
+
+header h1 {
+    color: #F6D5B7;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+
+h2 {
+    margin-top: 100px;
+    text-align: justify;
+    width: 80vw;
+    background-color: #2c95a7;
+    padding: 20px;
+    border-radius: 15px;
+    color: #F6D5B7;
+}
+
+h3 {
+    width: 85%;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
+    color: #296069;
+}
+
+section{
+    min-width: 40vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 15px;
+    margin-top: 100px;
+    background-color: rgb(255, 245, 246);
+    padding: 30px;
+}

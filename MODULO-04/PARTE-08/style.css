@@ -1,0 +1,85 @@
+
+section > div {
+    width: 80%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #296069;
+    border-radius: 5px;
+}
+
+section > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+/**************************** imagem centralizada ****************************/
+
+img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+/**************************** itens alinhados no centro ****************************/
+
+.central > div:nth-child(1) {
+    background: #2c7ca7fd;
+}
+.central > div:nth-child(2) {
+    background: #ebd087c5
+}
+.central > div:nth-child(3) {
+    background: #78a72c86;
+}
+.central > div:nth-child(4) {
+    background: #7a2ca742;
+}
+
+
+/**************************** itens alinhados na vertical ****************************/
+
+.vertical {
+    flex-direction: column;
+}
+
+.between {
+    flex-direction: column-reverse;
+}
+
+.vertical > div:nth-child(1) {
+    background: hsl(310,100%,20%);
+}
+.vertical > div:nth-child(2) {
+    background: hsl(310,100%,40%);
+}
+.vertical > div:nth-child(3) {
+    background: hsl(310,100%,60%);
+}
+.vertical > div:nth-child(4) {
+    background: hsl(310,100%,80%);
+}
+
+/**************************** alinhados na horizontal ****************************/
+
+
+.around {
+    flex-direction: row-reverse;
+}
+
+.horizontal > div:nth-child(1) {
+    background: hsl(160,80%,40%,1);
+}
+.horizontal > div:nth-child(2) {
+    background: hsl(160,80%,40%,0.75);
+}
+.horizontal > div:nth-child(3) {
+    background: hsl(160,80%,40%,0.5);
+}
+.horizontal > div:nth-child(4) {
+    background: hsl(160,80%,40%,0.25);
+}

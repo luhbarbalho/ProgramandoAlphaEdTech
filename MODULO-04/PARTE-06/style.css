@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('../assets/fonts/alexbrush-regular.woff2') format('woff2'), url('../assets/fonts/alexbrush-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'amaticbold';
+    src: url('../assets/fonts/amatic-bold.woff2') format('woff2'), url('../assets/fonts/amatic-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+@font-face {
+    font-family: 'amatic_scregular';
+    src: url('../assets/fonts/amaticsc-regular.woff2') format('woff2'), url('../assets/fonts/amaticsc-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'caroniregular';
+    src: url('../assets/fonts/caroni-regular.woff2') format('woff2'), url('../assets/fonts/caroni-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/***************************CSS - Parte6***************************/
+
+section{
+    width: 40vw;
+    height: auto;
+}
+
+li, a, input {
+    font-size: 16px;
+    font-family: 'Roboto';
+    margin-top: 10px;
+}
+
+li:nth-child(1) {
+    list-style:circle;
+}
+
+li:nth-child(2) {
+    list-style:lower-roman;
+}
+
+li:nth-child(3) {
+    list-style:upper-roman;
+}
+
+li:nth-child(4) {
+    list-style:decimal;
+}
+
+li:nth-child(5) {
+    list-style:disc;
+}
+
+li:nth-child(6) {
+    list-style:decimal-leading-zero;
+}
+
+li:nth-child(7) {
+    list-style:inside;
+}
+
+li:nth-child(8) {
+    list-style:lower-latin;
+}
+
+li:nth-child(9) {
+    list-style:none;
+}
+
+li:nth-child(10) {
+    list-style: upper-alpha;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(88, 122, 145);
+}
+
+.a1:hover{  
+    color: rgb(46, 143, 133);
+    font-size: 30px;
+}
+
+.a2:active{
+    color: rgb(145, 59, 119);
+    font-size: 30px;
+}
+
+input:focus{
+    background-color: burlywood;
+    color: brown;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.a4:link{
+    background-color: rgb(123, 172, 149);
+    color: burlywood;
+    font-size: 30px;
+}
+
+.a5:visited {
+    background-color: yellow;
+    font-size: 30px;
+}
+
+p{
+    font-size: 18px;
+    width: 70%;
+    margin-bottom: 15px;
+}
+
+.google p:nth-child(2){
+    font-family: 'Raleway', sans-serif;
+}
+.google p:nth-child(3){
+    font-family: 'Macondo', sans-serif;
+}
+.google p:nth-child(4){
+    font-family: 'Lobster', sans-serif;
+}
+
+.woff > p:nth-child(2){
+    font-family: 'amatic_scregular';
+    font-weight: normal;
+    font-style: normal;
+}
+.woff p:nth-child(3){
+    font-family: 'alex_brushregular';
+    font-weight: normal;
+    font-style: normal;
+}
+.woff p:nth-child(4){
+    font-family: 'caroniregular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.woff p:nth-child(5){
+    font-family: 'amaticbold';
+    font-weight: normal;
+    font-style: normal;
+}

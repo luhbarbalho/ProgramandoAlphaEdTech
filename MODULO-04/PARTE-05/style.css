@@ -1,0 +1,90 @@
+section{
+    min-width: 40vw;
+    height: auto;
+}
+
+h5 {
+    color: #F6D5B7;
+    background-color: #2f656e;
+    padding: 10px 15px;
+    
+}
+
+.conteudo {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url('../assets/imgs/vivendoavida.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.none{
+    color: #76a8b3;
+    text-decoration: none;
+}
+
+.over{
+    color: #76b391;
+    text-decoration: overline;
+    text-decoration-thickness: 8px;
+}
+
+.through{
+    color: #b490df;
+    text-decoration: line-through;
+    text-decoration-style: dotted;
+}
+.throughdashed{
+    color: #dfca90;
+    text-decoration: overline;
+    text-decoration-style: dashed;
+}
+
+.underline{
+    color: #503991;
+    text-decoration: underline;
+}
+
+.underlinewavy{
+    color: #b4e7ff;
+    text-decoration: underline;
+    text-decoration-style:wavy;
+    text-decoration-thickness: 3px;
+}
+
+.underover{
+    color: #d1758a;
+    text-decoration: underline overline;
+    text-decoration-thickness: 5px;
+}
+
+.directionrl {
+    writing-mode: vertical-rl;
+}
+
+.directionrl .underline, .directionlr .underline{
+    color: #b88f20;
+    text-decoration: overline;
+    text-decoration-style: dashed;
+}
+
+.directionrl .underover, .directionlr .underover{
+    color: #3a81bb;
+    text-decoration: underline overline;
+    text-decoration-style: dotted;
+}
+
+.directionrl .throughdashed, .directionlr .throughdashed{ 
+    color: #523b88;
+    text-decoration: line-through;
+    text-decoration-style: dashed;
+}
+
+.directionlr {
+    margin-bottom: 30px;
+    writing-mode: vertical-lr;
+}

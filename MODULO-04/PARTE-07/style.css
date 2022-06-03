@@ -1,0 +1,162 @@
+section{
+    height: auto;
+}
+
+section div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section > div > div {
+    min-width: 37%;
+    height: 130px;
+    margin: 20px;
+    color: rgb(21, 24, 29);
+}
+
+
+/**************************** HEXADECIMAL ****************************/
+
+.hex > div:nth-child(1) {
+    background: #2c7ca7;
+}
+.hex > div:nth-child(2) {
+    background: #e6bf55
+}
+.hex > div:nth-child(3) {
+    background: #78a72c;
+}
+.hex > div:nth-child(4) {
+    background: #7a2ca7;
+}
+
+/**************************** HEXADECIMAL COM TRANSPARÊNCIA ****************************/
+
+.hex-transp > div:nth-child(1) {
+    background: #2c7ca7fd;
+}
+.hex-transp > div:nth-child(2) {
+    background: #ebd087c5
+}
+.hex-transp > div:nth-child(3) {
+    background: #78a72c86;
+}
+.hex-transp > div:nth-child(4) {
+    background: #7a2ca742;
+}
+
+
+/**************************** RGB ****************************/
+
+.RGB > div:nth-child(1) {
+    background: rgb(104, 143, 165);
+}
+.RGB > div:nth-child(2) {
+    background: rgb(228, 221, 125)
+}
+.RGB > div:nth-child(3) {
+    background: rgb(123, 180, 76);
+}
+.RGB > div:nth-child(4) {
+    background: rgb(156, 95, 185);
+}
+
+/**************************** RGBA ****************************/
+
+
+.RGBA > div:nth-child(1) {
+    background: rgba(104, 143, 165, 1);
+}
+.RGBA > div:nth-child(2) {
+    background: rgba(228, 221, 125, 0.75)
+}
+.RGBA > div:nth-child(3) {
+    background: rgba(123, 180, 76, 0.5);
+}
+.RGBA > div:nth-child(4) {
+    background: rgba(156, 95, 185, 0.25);
+}
+
+/**************************** HSL ****************************/
+
+.HSL > div:nth-child(1) {
+    background: hsl(200,100%,20%);
+}
+.HSL > div:nth-child(2) {
+    background: hsl(200,100%,40%);
+}
+.HSL > div:nth-child(3) {
+    background: hsl(200,100%,60%);
+}
+.HSL > div:nth-child(4) {
+    background: hsl(200,100%,80%);
+}
+
+/**************************** HSLA ****************************/
+
+.HSLA > div:nth-child(1) {
+    background: hsl(340,100%,40%,1);
+}
+.HSLA > div:nth-child(2) {
+    background: hsl(340,100%,40%,0.75);
+}
+.HSLA > div:nth-child(3) {
+    background: hsl(340,100%,40%,0.5);
+}
+.HSLA > div:nth-child(4) {
+    background: hsl(340,100%,40%,0.25);
+}
+
+/**************************** BROWSER ****************************/
+
+.browsers > div:nth-child(1) {
+    background:steelblue;
+}
+.browsers > div:nth-child(2) {
+    background:khaki;
+}
+.browsers > div:nth-child(3) {
+    background: seagreen;
+}
+.browsers > div:nth-child(4) {
+    background:purple;
+}
+
+/**************************** ELEMENTO ****************************/
+
+.elemento {
+    width: 50vw;
+}
+
+.elemento > div {
+    max-width: 35%;
+}
+
+.elemento > div:nth-child(1) {
+    background: rgb(131, 131, 161);
+    color: inherit;
+}
+
+.elemento > div:nth-child(2) {
+    background-color: initial;
+    color: initial;
+}
+
+.unset {
+    color: rgba(35, 126, 111, 0.9);
+    background-color: rgba(158, 158, 207, 0.459);
+}
+.unset p{
+    font-size: 15px;
+    padding-left: 5px;
+    background-color: inherit;
+    color: unset;
+}
+
+.elemento > div:nth-child(4) {
+    background:purple;
+    opacity: 50%;
+    color: rgb(224, 214, 166);
+}
