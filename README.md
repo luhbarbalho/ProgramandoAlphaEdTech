@@ -189,7 +189,7 @@ nothing to commit, working tree clean
 
 __________________________________________________________________________
 
-4)
+4
 Criei o.gitignore, criei o arquivo txt que será ignorado e coloquei texto dentro dele. abri o .gitignore e coloquei o nome do arquivo a ser ignorado dentro dele como texto, salvei e assim ele não será adicionado ao repositório remoto.
 
 texto colocado dentro do .gitignore:  serei_ignorado.txt
