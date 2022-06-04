@@ -1,214 +1,95 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-body{
-    color: rgb(26, 26, 26);
-    box-sizing: border-box;
+
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-a, span {
-    text-transform:uppercase;
+body:last-child {
+    margin-bottom: 30px;
+}
+
+section > div {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+nav {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    font-weight: 700;
+}
+
+nav h2 {
     text-decoration: none;
-    color: rgb(116, 85, 8);
-    font-weight: bold;
-}
-h1 {
-    color: rgb(12, 90, 90);
-}
-h3 {
-    margin-top: 40px;
-}
-span {
-    color: rgb(99, 128, 99);
-}
-li {
-    list-style: none;
-}
-h4 {
-    font-size: 24px;
-}
-h5, span {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: rgb(59, 73, 97);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-.lista > h3 {
-    font-size: 16px;
-    font-family: 'Roboto', serif;
-    font-weight: 400;
+.mod3 nav {
+    background-color: rgb(247, 228, 204);
+    margin-top: 0;
+}
+.mod3 nav h2  {
+    color: #db914c;
 }
 
-/*==================================== TABELA ====================================*/
-
-/* table, th, td {
-    color: rgb(233, 218, 228);
-    margin: 30px 0 40px 40px;
-    border: 3px solid rgb(255, 255, 255);
-    border-collapse: collapse;
-    padding: 10px 20px 10px 20px;
+.mod4 nav {
+    background-color: #2c95a7;
 }
-th, td {
-    border-radius: 25px;
-    background-color: rgb(175, 135, 163);
-} */
-
-/*==================================== MEDIA ====================================*/
-
-
-
-/*==================================== IFRAME ====================================*/
-
-.iframes {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
+.mod4 nav h2  {
+    color: #F6D5B7;
 }
 
-#outra-pagina {
-    border: 1px solid rgb(146, 146, 146);
+.mod6 nav {
+    background-color: rgb(93, 134, 119);
+}
+.mod6 nav h2  {
+    color: #F6D5B7;
 }
 
-iframe {
-    margin-top: 25px;
-    border: none;
+p, h1, h2, h3, h5, a {
+    text-decoration: none;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
 }
 
-.mapouter {
-    position:relative;
-    text-align:right;
-    width: 1000px;
-    height:350px;
-    overflow-x: scroll; 
-}
-
-.gmap_canvas {
-    overflow:hidden;
-    background:none!important;
-    width:1500px;
-    height:350px;
-}
-
-.gmap_iframe {
-    height:350px!important;
-}
-
-
-/*==================================== FORMULÁRIO ====================================*/
-
-
-fieldset {
-    display: flex;
-    flex-direction: column;
-    width: 420px;   
-    border-radius: 13px;
-    border: none;
-    padding: 15px;
-    margin-left: 30px;
-    background-color: rgb(196, 156, 156);
-}
-
-label, p {
-    margin:10px;
-    color: rgb(129, 56, 78);
-}
-
-input {
-    padding-left: 7px;
-    border: none;
-    border-radius: 4px;
-    height: 20px;
-    color: rgb(158, 80, 104);
-    width: 270px;
-}
-
-.doVelhinho {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    width: 100px;
-    padding: 0;
-    font-size: 12.5px;
-}
-.doVelhinho input {
-    width: 10px;
-}
-
-.retinho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.retinho > input::placeholder {
-    color:rgb(158, 80, 104);
-}
-
-#idade {
-    -webkit-appearance: none;
-    height: 7px;
-    background: #d3d3d3;
-    opacity: 0.7;
-    cursor: pointer;
-}
-
-.marcador {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.marcador input {
-    width: 13px;
-}
-
-.btn {
-    display: flex;
+a {
     width: auto;
+    height: 30px;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0 5px 10px;
+    border-radius: 15px;
+    font-size: 20px;
 }
 
-.btn input {
-    width: 90px;
-    margin-top: 15px;
+.mod3 a {
+    color: rgb(247, 228, 204);
+    background-color: #af6c2d;
 }
-.imgSVG {
-    margin: 10px;
-    background-color: rgb(175, 135, 163);
-    border: 2px solid rgb(122, 73, 109);
-    border-radius: 30%;
+.mod4 a {
+    color: #2c95a7;
+    background-color: rgb(247, 228, 204);
 }
-
-.btn input, .marcador input:hover {
-    cursor: pointer;
+.mod6 a {
+    color: rgb(93, 134, 119);
+    background-color: rgb(247, 228, 204);
 }
 
-/*==================================== curiosidadealeatoria ====================================*/
 
-.curiosidadealeatoria .praca {
-    background-color: rgb(232, 255, 232);
-    width: 700px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-}
-
-.curiosidadealeatoria .relogio {
-    background-color: rgb(230, 255, 250);
-    height: 300px;
-    width: 700px;
-    margin-bottom: 150px;
-    overflow: visible;
-}
-
-.curiosidadealeatoria .ponte {
-    background-color: rgb(255, 249, 230);
-    height: 300px;
-    width: 200px;
-    overflow: auto;
-}
-
-.curiosidadealeatoria .noite {
-    background-color: rgb(255, 238, 242);
-    height: 400px;
-    width: 400px;
-    overflow: hidden;
+i {
+    margin-left: 6px;
 }

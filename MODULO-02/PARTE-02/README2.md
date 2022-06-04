@@ -1,9 +1,9 @@
-1)
+1.
 https://github.com/luhbarbalho/my_first_steps.git
 
 ______________________________________________________________________________
 
-2)
+2.
 marialuiza@MacBook-Pro workspace % cd my_first_steps
 
 marialuiza@MacBook-Pro my_first_steps % git init
@@ -134,7 +134,7 @@ nothing to commit, working tree clean
 
 ____________________________________________________________________________
 
-3)
+3.
 marialuiza@MacBook-Pro my_first_steps % touch ola_mundo.txt
 
 marialuiza@MacBook-Pro my_first_steps % nano ola_mundo.txt
@@ -189,8 +189,7 @@ nothing to commit, working tree clean
 
 __________________________________________________________________________
 
-4
+4.
 Criei o.gitignore, criei o arquivo txt que será ignorado e coloquei texto dentro dele. abri o .gitignore e coloquei o nome do arquivo a ser ignorado dentro dele como texto, salvei e assim ele não será adicionado ao repositório remoto.
 
 texto colocado dentro do .gitignore:  serei_ignorado.txt
-

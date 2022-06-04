@@ -3,6 +3,7 @@
     <h1>Módulo 03 - Parte 00</h1>
 </div>
 
+## Configuração de ambiente e primeiro HTML
 &nbsp;
 ### Exercícios:
 
