@@ -1,5 +1,5 @@
 section{
-    min-width: 40vw;
+    width: 50vw;
     height: auto;
 }
 
@@ -13,6 +13,7 @@ h5 {
 .conteudo {
     width: 400px;
     height: 400px;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,5 +87,19 @@ h5 {
 
 .directionlr {
     margin-bottom: 30px;
-    writing-mode: vertical-lr;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.default {
+    direction: ltr;
+    unicode-bidi: bidi-override;
+    margin-bottom: 10px;
+    color: rgb(226, 131, 114);
+}
+
+.inverse {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    color: rgb(204, 156, 233);
 }

@@ -1,36 +1,4 @@
 
-p, h1, h2, h5 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-}
-
-body {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-nav {
-    width: 100vw;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 60px;
-    font-weight: 700;
-    background-color: rgb(93, 134, 119);
-}
-
-nav h1 {
-    color: #F6D5B7;
-    text-decoration: none;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
 .card {
     width: 260px;
     height: 460px;
@@ -40,7 +8,7 @@ nav h1 {
     align-items: center;
     border: none;
     border-radius: 20px;
-    background-image: url(../assets/background-sunflower.jpeg);
+    background-image: url(../assets/imgs/background-sunflower.jpeg);
     background-size: 260px;
     background-repeat: no-repeat;
 }

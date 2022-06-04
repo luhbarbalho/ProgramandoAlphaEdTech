@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../css/reset.css" rel="stylesheet">
+    <title>Alpha - Modulo 03 - Formulario</title>
+    <style>
+    
+        header {
+            width: 100vw;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            margin-bottom: 60px;
+            font-weight: 700;
+            background-color: rgb(247, 228, 204);
+        }
+
+        header h1 {
+            color: #db914c;
+            font-family: 'Roboto';
+            font-size: 25px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        
+        h3 {
+            width: 70%;
+            color: rgb(247, 228, 204);
+            font-family: 'Roboto';
+            font-size: 21px;
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 15px;
+            border-radius: 15px;
+            background-color: #af6c2d;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 80px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 420px;   
+            border-radius: 13px;
+            padding: 15px;
+            background-color: rgb(196, 156, 156);
+        }
+        
+        fieldset {
+            border: none;
+        }
+
+        label, p {
+            margin:10px;
+            color: rgb(129, 56, 78);
+        }
+
+        input {
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            height: 20px;
+            color: rgb(158, 80, 104);
+            width: 270px;
+        }
+
+        .doVelhinho {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            width: 100px;
+            padding: 0;
+            font-size: 12.5px;
+        }
+        .doVelhinho input {
+            width: 10px;
+        }
+
+        .retinho {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #idade {
+            -webkit-appearance: none;  /* Override default CSS styles */
+            height: 7px;
+            background: #d3d3d3;
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        .marcador {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .marcador input {
+            width: 13px;
+        }
+
+        .btn {
+            display: flex;
+            width: auto;
+            justify-content: center;
+        }
+
+        .btn input {
+            width: 90px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MODULO 03 - PARTE 05</h1>
+    </header>
+    <section>
+        <h3>Crie um formulário bem apresentável que contenha o uso de todos os conhecimentos aprendidos nesta parte 02 do módulo de HTML, utilizando o elemento ‘fieldset’, ‘label’ e diversas entradas de dados de formulário.</h3>
+
+        <form id="dd" method="post" action="guardar-info-ex">
+            <fieldset>
+
+                <div class="retinho">
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data"
+                        value="" min="2022-01-01" max="2022-12-31" tabindex="1">
+                </div>
+
+                <div class="retinho">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="  Digite seu nome aqui." tabindex="2">
+                </div>
+                
+                <div class="retinho">
+                    <label for="email">E-mail:</label>
+                    <input type="e-mail" name="email" id="email" placeholder="  Digite seu e-mail aqui."tabindex="3">
+                </div>
+                
+                <p>Escolha seu velhinho preferido</p>
+                
+                <div class="retinho">
+                    <div class="doVelhinho">
+                        <input type="radio" id="velho1" name="velhinhos" value="Carl">
+                        <label for="velho1">Carl</label>
+                    </div>
+                    <div class="doVelhinho">
+                        <input type="radio" id="velho2" name="velhinhos" value="Dumbledore">
+                        <label for="velho2">Dumbledore</label>
+                    </div>
+                    <div class="doVelhinho">
+                        <input type="radio" id="velho3" name="velhinhos" value="Papai Noel">
+                        <label for="velho3">Papai Noel</label>
+                    </div>
+                    <div class="doVelhinho">
+                        <input type="radio" id="velho4" name="velhinhos" value="Gandalf">
+                        <label for="velho4">Gandalf</label>
+                    </div>
+                </div>
+
+                <div class="retinho">
+                        <label>Qual o melhor livro de Harry Potter?</label>
+                        <select name="color">
+                            <optgroup >
+                                <option value="1">Primeiro</option>
+                                <option value="2">Segundo</option>
+                            </optgroup>
+                            <optgroup>
+                                <option value="3">Claro que o Terceiro</option>
+                            </optgroup>
+                            <optgroup>
+                                <option value="4">Quarto</option>
+                                <option value="5">Quinto</option>
+                                <option value="6">Sexto</option>
+                                <option value="7">Sétimo</option>
+                            </optgroup>
+                        </select>
+                </div>
+
+                <div class="retinho">
+                    <label for="idade">Minha idade:</label>
+                    <input type="range" id="idade" name="idade" min="1" max="99" value="33" step="5">
+                </div>
+
+
+                <div class="retinho">
+                    <label for="pwd">Eu amo muito:</label>
+                    <input type="password" id="pwd" name="pwd" placeholder="  Conte um segredo segredoso.">
+                </div>
+                
+                <div class="btn">
+                    <input type="reset" name="resetar" value="Resetar">
+                    <input type="submit" name="enviar" value="Enviar">
+                </div>
+                
+                <div class="marcador">
+                    <label for="marcador">enviado</label>
+                    <input id="marcador" type="checkbox">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>

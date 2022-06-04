@@ -1,0 +1,13 @@
+.praca {
+    width: 800px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.praca p {
+    text-align: justify;
+    width: 1200px;
+    margin-left: 5px;
+}

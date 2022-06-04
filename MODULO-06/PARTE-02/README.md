@@ -1,6 +1,6 @@
 <div display="flex">
     <img src="../assets/imgs/alpha-logo.png" width="40px" align="left"/>
-    <h1>Módulo 07 - Parte 02</h1>
+    <h1>Módulo 06 - Parte 02</h1>
 </div>
 
 &nbsp;
@@ -10,7 +10,7 @@
 
     - Crie uma página web que contenha um formulário que possibilite a comparação de
 dois ‘números’ e após clicar no botão comparar, apareça o resultado se o primeiro
-número é maior, menor ou igual ao segundo número;
+número é maior, menor ou igual ao segundo número; (fazer co input)
 
     - Crie uma página web que possibilite a comparação do tamanho de duas ‘strings’ e
 após clicar no botão comparar, mostre o resultado se o tamanho da primeira string

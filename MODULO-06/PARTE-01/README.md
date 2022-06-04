@@ -1,6 +1,6 @@
 <div display="flex">
     <img src="../assets/imgs/alpha-logo.png" width="40px" align="left"/>
-    <h1>Módulo 07 - Parte 01</h1>
+    <h1>Módulo 06 - Parte 01</h1>
 </div>
 
 &nbsp;
@@ -26,16 +26,16 @@ da sua atividade);
 ### Referências básicas:
 
 - Vídeo: O que é e como funcionam os algoritmos?
-    - [https://www.youtube.com/watch?v=Xo1V_JL1yAg](https://www.youtube.com/watch?v=Xo1V_JL1yAg)
+    - https://www.youtube.com/watch?v=Xo1V_JL1yAg
 - Elementos das Linguagens de Programação
-    - [https://universidadedatecnologia.com.br/elementos-de-linguagens-de-programacao/](https://universidadedatecnologia.com.br/elementos-de-linguagens-de-programacao/)
-- Usando o console do navegador:
-    - [https://www.youtube.com/watch?v=eSPMRDcq9Co&t=22s](https://www.youtube.com/watch?v=eSPMRDcq9Co&t=22s)
-- Live Server plugin vsCode:
-    - h[ttps://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer](ttps://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-- Fontes do Google:
-    - [https://fonts.google.com/](https://fonts.google.com/)
+    - https://universidadedatecnologia.com.br/elementos-de-linguagens-de-programacao/
+- Usando o console do navegador
+    - https://www.youtube.com/watch?v=eSPMRDcq9Co&t=22s
+- Live Server plugin vsCode
+    - https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+- Fontes do Google
+    - https://fonts.google.com/
 - Javascript básico
-    - [https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/JavaScript_basics](https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+    - https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/JavaScript_basics
 - Primeiros passos com Javascript
-    - [https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
+    - https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript
