@@ -1,0 +1,109 @@
+section {
+    width: 460px;
+    height: 380px;
+    padding: 0px;
+}
+
+button {
+    margin-bottom: 15px;
+}
+
+input {
+    margin:0;
+}
+
+.nascimento {
+    margin-top: 10px;
+}
+
+.nascimento div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.nascimento input {
+    margin-left: 15px;
+    width: 100px;
+}
+
+
+/*****************************CSS do Radio Button */
+
+.pergunta {
+    width: 420px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.sexo {
+    position: relative;
+    width: auto;
+    margin:15px;
+    height: 40px;
+}
+
+.sexo input[type=radio]{
+    visibility: hidden;
+}
+
+.sexo label {
+    display: block;
+    position: relative;
+    font-weight: 400;
+    font-size: 1.1em;
+    padding: 10px 10px 0 50px;
+    z-index: 3;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+}
+
+.sexo :hover{
+	color: rgb(53, 207, 151);
+}
+
+.sexo .check{
+    display: block;
+    position: absolute;
+    border: 3px solid rgb(79, 114, 101);
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    top: 7px;
+    left: 10px;
+    z-index: 1;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+
+.sexo:hover .check {
+    border: 3px solid rgb(53, 207, 151);
+}
+
+.sexo .check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 12px;
+    width: 12px;
+    top: 4px;
+    left: 4px;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+
+input[type=radio]:checked ~ .check {
+    border: 3px solid rgb(79, 114, 101);
+}
+
+input[type=radio]:checked ~ .check::before {
+    background: rgb(79, 114, 101);
+}
+
+input[type=radio]:checked ~ .sexo label {
+    font-weight: 500;
+    color: rgb(79, 114, 101);
+}

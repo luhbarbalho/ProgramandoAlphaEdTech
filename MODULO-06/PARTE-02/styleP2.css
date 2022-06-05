@@ -1,0 +1,128 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    background-color: #F6D5B7;
+}
+
+h3 {
+    width: 430px;
+    font-size: 28px;
+}
+
+label {
+    font-size: 18px;
+    font-family: 'Roboto';
+    color: rgb(79, 114, 101);
+}
+
+input {
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px 0 5px 6px ;
+    font-size: 18px;
+    color: rgb(93, 134, 119);
+}
+
+input:hover {
+    border: 1px solid rgb(53, 207, 151);
+}
+
+input::placeholder {
+    color: rgb(135, 182, 165);
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+button {
+    width: auto;
+    padding: 15px 30px;
+    color: #F6D5B7;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid #F6D5B7;
+    border-radius: 10px;
+    background-color: rgb(93, 134, 119);
+}
+
+button:hover {
+    cursor: pointer;
+    border: 1px solid rgb(53, 207, 151);
+    border-radius: 10px;
+    background-color: transparent;
+    color: rgb(53, 207, 151);
+}
+
+.resultadoNum p, .resultadoStr p, .resultadoVida p {
+    width: 400px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Roboto';
+    font-size: 23px;
+}
+
+.parte02 h4 {
+    width: 100px;
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 30px;
+    color: #F6D5B7;
+    background-color: rgb(93, 134, 119);
+}
+
+a {
+    text-decoration: none;
+    padding:0;
+    margin: 0;
+}
+
+.parte02 {
+    width: 90vw;
+    background-color: transparent;
+    align-items: center;
+    
+}
+
+.parte02div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding:0;
+}
+
+.parte02div h5 {
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 16px;
+    color: rgb(73, 109, 96);
+}
+
+.voltar {
+    margin-top: 20px;
+    position:relative;
+    top: -74px;
+    left: 320px;
+}
+
+.voltar:hover {
+    background-color: rgb(53, 207, 151);
+}
+
+a {
+    color: white;
+}
