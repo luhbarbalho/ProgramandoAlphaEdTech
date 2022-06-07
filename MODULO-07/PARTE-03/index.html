@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../../css/reset.css" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/style-mod-07.css"/>
+        <link rel="stylesheet" href="../assets/styleCard.css"/>
+        <link rel="stylesheet" href="./style.css"/>
+        <title>Alpha - Modulo 07</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>MODULO 07 - PARTE 03</h1>
+        </header>
+        <h3>Faça um formulário com dois campos e um botão que, ao ser clicado, exiba o resultado, conforme o HTML select selecionado, da “soma”, “subtração”, “multiplicação” ou “divisão”</h3>
+
+        <section>
+            <div>
+                <input id="operando1"
+                type="number"
+                placeholder="Operando1"
+                tabindex="1"
+                required/>
+            </div>
+
+            <div>
+                <select name="operadores" id="operadores" tabindex="2" required/>
+                    <option value="">--Escolha um operador--</option>
+                    <option value="plus">+</option>
+                    <option value="minus">-</option>
+                    <option value="multiply">*</option>
+                    <option value="divide">/</option>
+                </select>
+            </div>
+
+            <div>
+                <input id="operando2"
+                type="number"
+                placeholder="Operando 2"
+                tabindex="3"
+                required/>
+            </div>
+
+            <button type="submit" class="calcular" tabindex="4">Calcular</button>
+
+        </section>
+
+        <div class="resultadoOperacao"></div>
+
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>

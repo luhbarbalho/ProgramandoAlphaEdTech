@@ -18,7 +18,7 @@ label {
     color: rgb(79, 114, 101);
 }
 
-input {
+input, select {
     height: 25px;
     border: 1px solid white;
     border-radius: 5px;
@@ -28,7 +28,7 @@ input {
     color: rgb(93, 134, 119);
 }
 
-input:hover {
+input:hover, select:hover {
     border: 1px solid rgb(53, 207, 151);
 }
 
@@ -36,7 +36,7 @@ input::placeholder {
     color: rgb(135, 182, 165);
 }
 
-input:focus, button:focus {
+input:focus, button:focus, select:focus {
     outline: none;
 }
 
@@ -63,7 +63,7 @@ button:hover {
     color: rgb(53, 207, 151);
 }
 
-.resultadoNum p, .resultadoStr p, .resultadoVida p {
+.resultadoNum p, .resultadoStr p, .resultadoVida p, .resultadoOperacao p {
     width: 400px;
     text-align: center;
     margin-bottom: 30px;
@@ -84,9 +84,10 @@ button:hover {
 }
 
 a {
-    text-decoration: none;
     padding:0;
     margin: 0;
+    color: white;
+    text-decoration: none;
 }
 
 .parte02 {
@@ -121,8 +122,4 @@ a {
 
 .voltar:hover {
     background-color: rgb(53, 207, 151);
-}
-
-a {
-    color: white;
 }

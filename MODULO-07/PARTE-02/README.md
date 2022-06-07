@@ -1,6 +1,6 @@
 <div display="flex">
     <img src="../assets/imgs/alpha-logo.png" width="40px" align="left"/>
-    <h1>Módulo 06 - Parte 02</h1>
+    <h1>Módulo 07 - Parte 02</h1>
 </div>
 
 ## Tipos Primários de Dados, expressões e operadores
