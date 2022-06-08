@@ -1,4 +1,4 @@
-/*************************** TEMPLATE CSS - MODULO 06 ***************************/
+/*************************** TEMPLATE CSS - MODULO 07 ***************************/
 
 body {
     width: 100vw;
@@ -6,6 +6,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 body:last-child {

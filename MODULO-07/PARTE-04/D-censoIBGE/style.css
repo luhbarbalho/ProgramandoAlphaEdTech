@@ -1,0 +1,24 @@
+.sectionLetraD {
+    height: auto;
+}
+
+.resultadoSorteador, .resultadoIdosa {
+    width: 460px;
+    box-sizing: border-box;
+}
+
+
+.resultadoSorteador h3, .resultadoIdosa h3 {
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: 0;
+    color: #aa8fd8;
+    background-color: #e5d6ff;
+    margin-bottom: 140px;
+}
+
+.resultadoSorteador, .resultadoSorteador h3 {
+    margin-top: 30px;
+    margin-bottom: 0;
+}

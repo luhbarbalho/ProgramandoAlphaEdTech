@@ -7,45 +7,45 @@
         <link href="../../../css/reset.css" rel="stylesheet">
         <link rel="stylesheet" href="../../assets/style-mod-07.css"/>
         <link rel="stylesheet" href="../../assets/styleCard.css"/>
+        <link rel="stylesheet" href="../styleParte4.css"/>
         <link rel="stylesheet" href="./style.css"/>
         <title>Alpha - Modulo 07</title>
     </head>
-    
+
     <body>
         <header>
-            <h1>MODULO 07 - PARTE 02</h1>
+            <h1>MODULO 07 - PARTE 04 - LETRA B</h1>
         </header>
-        <h3>Comparando Números</h3>
-        
+        <h3>Crie uma página que ao clicar em um botão de sortear, exiba um valor entre o mínimo e o máximo colocado pelo usuário</h3>
+
         <section>
+            <form class="letraB" action="">
                 <div>
-                    <label for="num1">Primeiro Número</label>
-                    <input id="num1"
-                    type="number"
-                    placeholder="num 1"
+                    <input id="valorMinimo"
+                    type="text"
+                    placeholder="Valor mínimo"
                     tabindex="1"
                     required/>
                 </div>
                 <div>
-                    <label for="num2">Segundo Número</label>
-                    <input id="num2"
-                    type="number"
-                    placeholder="num 2"
+                    <input id="valorMaximo"
+                    type="text"
+                    placeholder="Valor máximo"
                     tabindex="2"
                     required/>
                 </div>
 
-                <button type="submit" class="compararNum" tabindex="3">Comparar</button>
-                
-                <div class="resultadoNum"></div>
-
-                <script type="text/javascript" src="./script.js"></script>
-            
+                <button type="submit" class="sortear" tabindex="3">Sortear</button>
+            </form>
         </section>
-        
+
+        <div class="resultadoSorteio"></div>
+
         <div class="buttons">
             <button class="voltar"><a href="https://luhbarbalho.github.io/ProgramandoAlphaEdTech/index.html">Voltar</a></button>
-            <button class="proximo"><a href="https://luhbarbalho.github.io/ProgramandoAlphaEdTech/MODULO-07/PARTE-02/C-calculoVida/index.html">Próximo</a></button>
+            <button class="proximo"><a href="https://luhbarbalho.github.io/ProgramandoAlphaEdTech/MODULO-07/PARTE-04/C-arredondar/index.html">Próximo</a></button>
         </div>
+        
+        <script type="text/javascript" src="./script.js"></script>
     </body>
 </html>

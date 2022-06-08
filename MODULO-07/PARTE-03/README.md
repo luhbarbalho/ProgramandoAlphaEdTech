@@ -3,10 +3,9 @@
     <h1>Módulo 07 - Parte 03</h1>
 </div>
 
-## Declaração de variáveis e constantes e operadores
+## Declaração de variáveis e constantes, e operadores
 
 &nbsp;
-
 
 http://getbem.com/introduction/
 https://github.com/reprograma/On17-TodasEmTech-ListToDo

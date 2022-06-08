@@ -113,13 +113,43 @@ a {
     color: rgb(73, 109, 96);
 }
 
-.voltar {
-    margin-top: 20px;
-    position:relative;
-    top: -74px;
-    left: 320px;
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 460px;
 }
+
+.voltar {
+    width: 140px;
+    margin-top: 20px;
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+
 
 .voltar:hover {
     background-color: rgb(53, 207, 151);
+}
+
+.proximo {
+    width: 140px;
+    margin-top: 20px;
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+
+.proximo:hover {
+    background-color: rgb(53, 207, 151);
+}
+
+@media screen and (max-width: 700px) {
+    .voltar {
+        right: auto;
+    }
+    .proximo {
+        right: auto;
+        top: auto;
+    }
 }
