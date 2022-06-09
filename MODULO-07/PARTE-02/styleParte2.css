@@ -1,3 +1,4 @@
+
 body {
     height: 100vh;
     display: flex;
@@ -24,7 +25,7 @@ header h1 {
 }
 
 h3 {
-    width: 80%;
+    width: 430px;
     margin-top: 100px;
     background-color: #8f6bce;
     color: #e5d6ff;
@@ -41,22 +42,6 @@ button {
 
 option {
     text-align: center;
-}
-
-.resultadoOperacao {
-    width: 460px;
-    margin-top: 30px;
-    box-sizing: border-box;
-}
-
-.resultadoOperacao h3 {
-    width: auto;
-    height: auto;
-    text-align: center;
-    margin: 0;
-    color: #aa8fd8;
-    background-color: #e5d6ff;
-    margin-bottom: 150px;
 }
 
 button {
@@ -79,5 +64,5 @@ button:hover {
 }
 
 .buttons {
-    width: 400px;
+    width: 460px;
 }

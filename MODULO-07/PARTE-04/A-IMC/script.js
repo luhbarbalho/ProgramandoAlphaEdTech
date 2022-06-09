@@ -2,7 +2,7 @@
 const resultadoIMC = document.querySelector(".resultadoIMC");
 const calcular = document.querySelector(".calcular");
 let imc = 0;
-let mensagemIMC = `Preencha todos os campos com números válidos!`;
+let mensagemErro = `Preencha todos os campos com números válidos!`;
 let nivel;
 let referencia;
 
@@ -37,12 +37,11 @@ calcular.addEventListener('click', function(e) {
             nivel = `Obesidade grau III`;
         }
     }
-    mensagemIMC = `Seu IMC é ${ imc }`;
 
-    (referencia === undefined || nivel === undefined) ?
-    resultadoIMC.innerHTML = `<h3>${ mensagemIMC }</h3>`
+    ( isNaN(peso) || isNaN(altura)) ?
+    resultadoIMC.innerHTML = `<h3>${ mensagemErro }</h3>`
     :
-    resultadoIMC.innerHTML = `<h3>${ mensagemIMC }</h3>
+    resultadoIMC.innerHTML = `<h3>Seu IMC é ${ imc }</h3>
                             <h3>${ referencia }</h3>
                             <h3>${ nivel }</h3>`;
 

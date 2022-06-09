@@ -10,7 +10,7 @@ body {
 
 section {
     width: 400px;
-    height: 280px;
+    height: auto;
     padding: 40px 0;
     background-color: #e5d6ff;
 }
@@ -27,6 +27,7 @@ header h1 {
 h3 {
     width: 80%;
     margin-top: 100px;
+    line-height: 35px;
     background-color: #8f6bce;
     color: #e5d6ff;
 }
