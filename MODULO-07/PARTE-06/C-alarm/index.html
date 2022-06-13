@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../../css/reset.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../assets/style-mod-07.css"/>
+        <link rel="stylesheet" href="../../assets/styleCard.css"/>
+        <link rel="stylesheet" href="../styleParte6.css"/>
+        <link rel="stylesheet" href="./style.css"/>
+        <title>Alpha - Modulo 07</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>MODULO 07 - PARTE 06 - LETRA C</h1>
+        </header>
+        
+        <h3>Criar uma página que contenha um alarme. Para isso, utilizar o HTML select para seleção dos minutos e segundos (máx 59 min), criar um botão que inicia a contagem regressiva que ao ser clicado vira um botão de desarmar. <!--TODO:-->O contador deve mostrar o tempo a cada segundo, quando faltar menos de 5% do tempo inicial, mudar a interface e informar que o tempo está acabando.</h3>
+        <h3>Ao término da contagem, deve-se disparar um alarme informando que o tempo acabou. Se o usuário clicar no botão de desarmar alarme, a contagem deve ser parada e, caso o alarme esteja tocando, o som deve parar, transformando o botão para que possa armar o alarme novamente.</h3>
+
+        <section>
+
+                <div class="imagens">
+                
+                    <div class="contMin">0</div>
+                    <div class="contSeg">0</div>
+                    <!-- <img class="alarmOff" src="../../assets/imgs/alarmStop.png" alt="despertador desligado"> -->
+
+                    <img class="alarmOnLeft" src="../../assets/imgs/alarmOnLeft.png" alt="alarme tocando">
+
+                </div>
+                
+                <div class="chronometers">
+                    <select name="chronometerMin" id="chronometerMin">
+                    <option value="" hidden>--Min</option>
+                    </select>
+    
+                    <select name="chronometerSec" id="chronometerSec">
+                    <option value="" hidden>--Sec</option>
+                    </select>
+                </div>
+                
+                <div class="botao"><button class="begin" onClick="activateAlarm()">Iniciar</button></div>
+
+        </section>
+
+        <audio class="audioBomb" src="https://assets.mixkit.co/sfx/preview/mixkit-facility-alarm-sound-999.mp3" controls hidden></audio>
+        
+        <audio class="ticking" src="../../assets/tick.wav" controls hidden></audio>
+        
+        <div class="buttons">
+            <button class="voltar"><a href="https://luhbarbalho.github.io/ProgramandoAlphaEdTech/index.html">Voltar</a></button>
+            <button class="proximo"><a href="https://luhbarbalho.github.io/ProgramandoAlphaEdTech/MODULO-07/PARTE-07/A-carList/index.html">Próximo</a></button>
+        </div>
+
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>

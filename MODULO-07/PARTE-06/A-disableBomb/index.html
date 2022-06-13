@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../../css/reset.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../assets/style-mod-07.css"/>
+        <link rel="stylesheet" href="../../assets/styleCard.css"/>
+        <link rel="stylesheet" href="../styleParte6.css"/>
+        <link rel="stylesheet" href="./style.css"/>
+        <title>Alpha - Modulo 07</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>MODULO 07 - PARTE 06 - LETRA A</h1>
+        </header>
+        <h3>Crie uma página, utilize o setTimeout para ‘armar a bomba’, aso o usuário clique na bomba, utilize o clearTimeout para desarmar a bomba, caso a bomba não seja desarmada, ao terminar o tempo, a bomba deve explodir e um som de explosão deve ser tocado</h3>
+
+        <section>
+
+                <div class="imagens">
+                    <img class="bombOff" src="../../assets/imgs/bombinha apagada.png" alt="bomba apagada">
+                    
+                    <img class="bombOn" onclick="disableBomb()" src="../../assets/imgs/bombinha acesa.png" alt="bomba acesa">
+                    
+                    <img class="boom" src="../../assets/imgs/BOOM.png" alt="boom">
+                </div>
+
+                <button class="turnOn">Acender</button>
+
+        </section>
+
+        <audio class="audioBomb" src="https://cdn.freesound.org/previews/399/399303_5405837-lq.mp3" controls hidden></audio>
+        
+        <div class="buttons">
+            <button class="voltar"><a href="https://luhbarbalho.github.io/ProgramandoAlphaEdTech/index.html">Voltar</a></button>
+            <button class="proximo"><a href="https://luhbarbalho.github.io/ProgramandoAlphaEdTech/MODULO-07/PARTE-06/B-tickingBomb/index.html">Próximo</a></button>
+        </div>
+
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>

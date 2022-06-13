@@ -1,0 +1,50 @@
+
+section {
+    height: 450px;
+    justify-content: flex-end;
+}
+
+section .bombOff {
+    width: 300px;
+    margin-bottom: 20px;
+
+}
+
+section .bombOn {
+    width: 300px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+section .boom {
+    width: 550px;
+    position: relative;
+    top: 120px;
+    left: 0px;
+    display: none;
+}
+
+.resultadoExibir {
+    width: 460px;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.resultadoExibir h3 {
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: 0;
+    color: #aa8fd8;
+    background-color: #e5d6ff;
+    margin-bottom: 20px;
+}
+
+.turnOn {
+    z-index: 5;
+}
+
+.turnOn:focus {
+    color: #e5d6ff;
+    background-color: #d16ba5;
+}
