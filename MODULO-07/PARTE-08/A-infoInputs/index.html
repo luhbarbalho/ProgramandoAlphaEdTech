@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../../css/reset.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../assets/style-mod-07.css"/>
+        <link rel="stylesheet" href="../../assets/styleCard.css"/>
+        <link rel="stylesheet" href="../styleParte8.css"/>
+        <link rel="stylesheet" href="./style.css"/>
+        <title>Alpha - Modulo 07</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>MODULO 07 - PARTE 08</h1>
+        </header>
+        <h3>Crie uma página web que peça ao usuário que preencha 5 dados de usuário (‘Nome’, ’Data de Nascimento’, ’Peso’, ’Altura’ e ‘Gênero’) por meio de um formulário, sendo armazenado em um objeto JavaScript ‘user’ após clique de um botão, de forma que:</h3>
+
+        <section>
+            <form class="letraA" action="">
+
+                <div>
+                    <input id="nome"
+                    type="text"
+                    placeholder="nome"
+                    required/>
+                </div>
+                
+                <div class="nascido">
+                    <label for="nascimento">data de nascimento</label>
+                    <input id="nascimento"
+                    type="date"
+                    placeholder="data de nascimento"
+                    required/>
+                </div>
+                
+                <div>
+                    <input id="peso"
+                    type="text"
+                    placeholder="peso"
+                    required/>
+                </div>
+                
+                <div>
+                    <input id="altura"
+                    type="text"
+                    placeholder="altura"
+                    required/>
+                </div>
+                
+                <div>
+                    <select id="genero"
+                    required/>
+                        <option hidden>sexo</option>
+                        <option id="masc" value="masc">masculino</option>
+                        <option id="fem" value="fem">feminino</option>
+                    </select>
+                </div>
+
+        </form>
+
+                <button type="submit" class="compute">
+                    Computar
+                </button>
+            </form>
+        </section>
+
+        <div class="resultadoCompute"></div>
+        
+        <div class="buttons">
+            <button class="voltar"><a href="https://luhbarbalho.github.io/ProgramandoAlphaEdTech/index.html">Voltar</a></button>
+            <button class="proximo"><a href="https://luhbarbalho.github.io/ProgramandoAlphaEdTech/MODULO-07/PARTE-06/A-disableBomb/index.html">Próximo</a></button>
+        </div>
+
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../../css/reset.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../assets/style-mod-07.css"/>
+        <link rel="stylesheet" href="../../assets/styleCard.css"/>
+        <link rel="stylesheet" href="../styleParte7.css"/>
+        <link rel="stylesheet" href="./style.css"/>
+        <title>Alpha - Modulo 07</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>MODULO 07 - PARTE 07 - LETRA A</h1>
+        </header>
+        <h3>Crie uma página web que possua um elemento HTML select que possa selecionar uma lista de carros esportivos, podendo identificar a mudança de carro selecionado e alterar a imagem associada, exibir as informações referentes a este carro (dados do carro como nome, fabricante, velocidade máxima, 0-100km e outras informações que julgar pertinente)</h3>
+
+        <section>
+            <form class="letraA" action="">
+
+                <select onchange="changeCar()" name="carros" id="carros" required/>
+                    <option value="" hidden>
+                        --Escolha uma fruta--
+                    </option>
+                    <option value="Ferrari">
+                        Ferrari
+                    </option>
+                    <option value="DeLorean">
+                        DeLorean
+                    </option>
+                    <option value="Aston martin">
+                        Aston martin
+                    </option>
+                    <option value="Ford Falcon">
+                        Ford Falcon
+                    </option>
+                    <option value="camaro">
+                        Camaro
+                    </option>
+                </select>
+            </form>
+        </section>
+
+        <div class="resultadoImage"></div>
+        <div class="resultadoInfo"></div>
+        
+        <div class="buttons">
+            <button class="voltar"><a href="https://luhbarbalho.github.io/ProgramandoAlphaEdTech/index.html">Voltar</a></button>
+            <button class="proximo"><a href="https://luhbarbalho.github.io/ProgramandoAlphaEdTech/MODULO-07/PARTE-07/B-CEP/index.html">Próximo</a></button>
+        </div>
+
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>

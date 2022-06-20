@@ -1,0 +1,37 @@
+section {
+    height: auto;
+}
+
+.letraA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultadoImage {
+    width: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.resultadoImage img {
+    width: 400px;
+    height: auto;
+    margin: 0;
+    border-radius: 15px;
+}
+
+
+select {
+    height: 35px;
+    font-size: 22px;
+}
+
+option {
+    text-align: center;
+    color: #aa8fd8;
+}

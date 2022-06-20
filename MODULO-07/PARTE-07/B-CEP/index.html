@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../../css/reset.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../assets/style-mod-07.css"/>
+        <link rel="stylesheet" href="../../assets/styleCard.css"/>
+        <link rel="stylesheet" href="../styleParte7.css"/>
+        <link rel="stylesheet" href="./style.css"/>
+        <title>Alpha - Modulo 07</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>MODULO 07 - PARTE 07 - LETRA B</h1>
+        </header>
+        <h3>Crie uma página web que contenha um formulário que contenha um campo do tipo CEP (input type text), o usuário só pode inserir caracteres que sejam numéricos; Ao digitar o CEP, capturar o evento de keyup (para poder preencher o campo até o limite de tamanho de um CEP não permitindo mais números do que o permitido e adicionando, se necessário o ‘hífen’ natural de um CEP). E se o usuário apertar a tecla ‘backspace’ (keydown) ele deve apagar o último número inserido.</h3>
+
+        <section>
+            <form class="letraB" action="">
+                <div>
+                    <label for="cep">CEP: </label>
+                    <input onkeyup="printCEP()"
+                    id="cep"
+                    type="text"
+                    placeholder="Seu CEP aqui"
+                    maxlength="9"
+                    required/>
+                </div>
+            </form>
+        </section>
+
+        <div class="resultadoCEP"></div>
+        
+        <div class="buttons">
+            <button class="voltar"><a href="https://luhbarbalho.github.io/ProgramandoAlphaEdTech/index.html">Voltar</a></button>
+            <button class="proximo"><a href="https://luhbarbalho.github.io/ProgramandoAlphaEdTech/MODULO-07/PARTE-07/C-chat/index.html">Próximo</a></button>
+        </div>
+
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>

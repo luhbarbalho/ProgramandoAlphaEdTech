@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../../css/reset.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../assets/style-mod-07.css"/>
+        <link rel="stylesheet" href="../../assets/styleCard.css"/>
+        <link rel="stylesheet" href="../styleParte7.css"/>
+        <link rel="stylesheet" href="./style.css"/>
+        <title>Alpha - Modulo 07</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>MODULO 07 - PARTE 07 - LETRA C</h1>
+        </header>
+        <h3>Crie uma página web que simule um chat, onde possibilite o envio de uma mensagem de forma que a mensagem digitada no campo do tipo text, ao clicar no botão enviar, deve aparecer no campo do tipo textarea (sem apagar o conteúdo do campo textarea adicionando uma linha a mais a cada inserção)</h3>
+        <h3>O campo textarea deve ter uma largura e altura definida de forma a exibir aproximadamente as últimas 10 linhas e, caso possua mais linhas apareça uma barra de scroll para visualizar todas as mensagens que excedam este limite</h3>
+        <h3>Após digitar a mensagem o usuário pode apertar a tecla ‘enter’ ou botão enviar</h3>
+        <h3>O campo textarea deve receber as mensagens e automaticamente fazer um scroll até a última mensagem permitindo que a última mensagem seja sempre visualizada (utilizar o scrollTop para isso)</h3>
+        <h3>Adicionar um botão para poder ‘limpar’ o conteúdo do campo textarea que ao ser clicado apague o conteúdo do campo textarea</h3>
+
+        <section>
+
+                <div>
+                    <textarea class="chatSquare" disabled></textarea>
+                </div>
+
+                <div class="inputMensagens">
+                    <input id="messageWritten" type="text">
+                    <button onclick="sendMessage()">Enviar</button>
+                    <button onclick="cleanSquare()">Limpar</button>
+                </div>
+
+        </section>
+
+        <div class="buttons">
+            <button class="voltar"><a href="https://luhbarbalho.github.io/ProgramandoAlphaEdTech/index.html">Voltar</a></button>
+            <button class="proximo"><a href="https://luhbarbalho.github.io/ProgramandoAlphaEdTech/MODULO-07/PARTE-08/A-infoInputs/index.html">Próximo</a></button>
+        </div>
+
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>
